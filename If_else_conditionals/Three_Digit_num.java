@@ -1,3 +1,5 @@
+package If_else_conditionals;
+
 import java.util.Scanner;
 
 public class Three_Digit_num {

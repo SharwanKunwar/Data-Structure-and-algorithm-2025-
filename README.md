@@ -89,5 +89,5 @@ If you are also learning DSA or have valuable tips, resources, or challenges to 
 
 ---
 
-### “Code is like humor. When you have to explain it, it’s bad.” — Cory House
+### “Code is like humor. When you have to explain it, it’s bad.”
 

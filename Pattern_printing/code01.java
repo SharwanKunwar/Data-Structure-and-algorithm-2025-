@@ -1,11 +1,22 @@
 package Pattern_printing;
 
 //Author: Sharwan jung kunwar
-//Purpose: To Print all the ASCII values and their equivalent characters of 26 alphabets using a while loop.
+//Purpose: To Print the given pattern.
+/*
+        * * * * *
+        * * * * *
+        * * * * *
+*/
 
 public class code01 {
     public static void main(String[] args)
     {
+        for(int i=0; i<3; i++){
+            for(int j=0; j<5; j++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
 
     }
 }

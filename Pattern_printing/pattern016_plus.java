@@ -3,16 +3,18 @@ package Pattern_printing;
 //Author: Sharwan jung kunwar
 //Purpose: Print the given pattern.
 
-/* Ex: - for: 4
-                    1
-                    0 1
-                    1 0 1
-                    0 1 0 1
+/* Ex: - for: 5
+                        *
+                        *
+                    * * * * *
+                        *
+                        *
+
  */
 
 import java.util.Scanner;
 
-public class pattern015_triangle {
+public class pattern016_plus {
     public static void main(String[] args)
     {
         //creating a scanner object to take input from the user.
@@ -24,17 +26,12 @@ public class pattern015_triangle {
         //logic
         for(int i=1; i<=num; i++)
         {
-            for(int j=1; j<=i; j++)
+            for(int j=1; j<=num; j++)
             {
-//              if((i%2 == 0 && j%2 == 0) || (i%2 != 0 && j%2 != 0)) System.out.print("1 ");
-                if((i+j)%2 == 0) System.out.print("1 ");   //The sum of even is also even so. This will also work.
-                else System.out.print("0 ");
+                if((i == (num/2)+1) || (j == (num/2)+1)) System.out.print("* ");
+                    else System.out.print("  ");
             }
             System.out.println();
         }
-
-        //closing scanner
-        scan.close();
-
     }
 }

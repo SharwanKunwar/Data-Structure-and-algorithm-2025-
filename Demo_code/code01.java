@@ -1,4 +1,4 @@
-package Pattern_printing;
+package Demo_code;
 
 //Author: Sharwan jung kunwar
 //Purpose: Print the given pattern.
@@ -12,7 +12,7 @@ package Pattern_printing;
 
 import java.util.Scanner;
 
-public class pattern015_triangle {
+public class code01 {
     public static void main(String[] args)
     {
         //creating a scanner object to take input from the user.
@@ -21,20 +21,15 @@ public class pattern015_triangle {
         System.out.print("Enter your Num : ");
         int num = scan.nextInt();
 
-        //logic
-        for(int i=1; i<=num; i++)
-        {
-            for(int j=1; j<=i; j++)
-            {
-//              if((i%2 == 0 && j%2 == 0) || (i%2 != 0 && j%2 != 0)) System.out.print("1 ");
-                if((i+j)%2 == 0) System.out.print("1 ");   //The sum of even is also even so. This will also work.
+        //Logic
+        for(int i=1; i<=num; i++){
+            for(int j=1; j<=i; j++){
+                if((i%2 == 0 && j%2 == 0)|| (i%2 != 0 && j%2 != 0)) System.out.print("1 ");
                 else System.out.print("0 ");
             }
             System.out.println();
         }
 
-        //closing scanner
-        scan.close();
-
     }
+
 }

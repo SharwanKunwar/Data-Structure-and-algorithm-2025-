@@ -1,40 +1,45 @@
-package Demo_code;
+package Demo_Jpt_code;
 
 //Author: Sharwan jung kunwar
 //Purpose: Print the given pattern.
 
 /* Ex: - for: 4
-                     * * * * * * *
-                       * * * * *
-                         * * *
-                           *
+                      *
+                    * * *
+                  * * * * *
+                * * * * * * *
  */
 
 import java.util.Scanner;
 
-public class code05 {
+public class method_another {
     public static void main(String[] args)
     {
         //creating a scanner object to take input from the user.
         Scanner scan = new Scanner(System.in);
 
-        System.out.print("Enter your Num : ");
+
+        System.out.print("Enter your size : ");
         int num = scan.nextInt();
 
-        //logic
-        for(int i=1; i<=num; i++)
-        {
+        int space = num-1;
+        int pattern =1;
 
-            for(int k=1; k<i; k++){
+        //logic
+        for(int i=1; i<=num; i++){
+            for(int j=1; j<=space; j++){
                 System.out.print("  ");
             }
-            for(int j=2; j<= (2*num-i)-i; j++){
+            for(int k=1; k<=pattern; k++){
                 System.out.print("* ");
             }
-
+            space--;
+            pattern+=2;
             System.out.println();
-
         }
+
+
+
 
     }
 }

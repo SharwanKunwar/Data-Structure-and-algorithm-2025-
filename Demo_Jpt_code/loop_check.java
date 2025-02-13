@@ -1,4 +1,4 @@
-package Demo_code;
+package Demo_Jpt_code;
 
 //Author: Sharwan jung kunwar
 //Purpose: To demonstrate increment and decrement operation.

@@ -1,20 +1,19 @@
-package Demo_code;
+package Demo_Jpt_code;
 
 //Author: Sharwan jung kunwar
 //Purpose: Print the given pattern.
 
-/* Ex: - for: 5
-                    1
-                    A B
-                    1 2 3
-                    A B C D
-                    1 2 3 4 5
+/* Ex: - for: 4
+                    *
+                  * * *
+                * * * * *
+              * * * * * * *
 
  */
 
 import java.util.Scanner;
 
-public class code02 {
+public class code08 {
     public static void main(String[] args)
     {
         //creating a scanner object to take input from the user.
@@ -25,21 +24,14 @@ public class code02 {
 
         //logic
         for(int i=1; i<=num; i++){
-
-            if(i%2 == 0){
-                for(int k=1; k<=i; k++){
-                    System.out.print((char)(k+64)+" ");
-                }
-            }else {
-                for(int j=1; j<=i; j++){
-                    System.out.print(j+" ");
-                }
+            for(int j=1; j<=num-i; j++){
+                System.out.print("  ");
             }
-
-
+            for(int k=1; k<=2*i-1; k++){
+                System.out.print("* ");
+            }
             System.out.println();
         }
-
 
     }
 }

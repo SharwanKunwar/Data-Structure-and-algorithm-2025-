@@ -17,12 +17,19 @@ public class Swap_variable {
          b = scan.nextInt();
 
         System.out.println("Value of a : " +a+ " Value of b : " +b+ " before swap");
-        swap(a,b);
+        real_swap();
         System.out.println("Value of a : " +a+ " Value of b : " +b+ " after swap");
 
     }
     public static void swap(int x, int y){
         a = y;
-        b=x;
+        b = x;
+    }
+    public static void real_swap(){
+        a = a+b;
+        b = a-b;
+        a = a-b;
     }
 }
+
+
